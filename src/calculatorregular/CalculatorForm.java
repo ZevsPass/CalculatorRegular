@@ -10,7 +10,19 @@ package calculatorregular;
  * @author edw_rd
  */
 public class CalculatorForm extends javax.swing.JFrame {
-
+    
+    int one =1;
+    int two = 2;
+    int three = 3;
+    int four = 4;    
+    int five = 5;
+    int six =6;   
+    int seven = 7;
+    int eight = 8;
+    int nine = 9;
+    int ten = 10;
+        
+  
     /**
      * Creates new form CalculatorForm
      */
@@ -32,10 +44,10 @@ public class CalculatorForm extends javax.swing.JFrame {
         clear = new javax.swing.JButton();
         clearAll = new javax.swing.JButton();
         stepBack = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        delenNaXBtn = new javax.swing.JButton();
+        stepen2Btn = new javax.swing.JButton();
+        koren2Btn = new javax.swing.JButton();
+        delenieBtn = new javax.swing.JButton();
         numb7Btn = new javax.swing.JButton();
         numb8Btn = new javax.swing.JButton();
         numb9Btn = new javax.swing.JButton();
@@ -69,20 +81,25 @@ public class CalculatorForm extends javax.swing.JFrame {
 
         stepBack.setText("<=x=");
 
-        jButton5.setText("1/x");
+        delenNaXBtn.setText("1/x");
 
-        jButton6.setText("x2");
+        stepen2Btn.setText("x2");
 
-        jButton7.setText("koren2");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        koren2Btn.setText("koren2");
+        koren2Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                koren2BtnActionPerformed(evt);
             }
         });
 
-        jButton8.setText("/");
+        delenieBtn.setText("/");
 
         numb7Btn.setText("7");
+        numb7Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb7BtnActionPerformed(evt);
+            }
+        });
 
         numb8Btn.setText("8");
 
@@ -128,7 +145,7 @@ public class CalculatorForm extends javax.swing.JFrame {
                             .addComponent(numb1Btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(procentBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(numb4Btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(delenNaXBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(numb7Btn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -149,14 +166,14 @@ public class CalculatorForm extends javax.swing.JFrame {
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(stepen2Btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                                                     .addGroup(layout.createSequentialGroup()
                                                         .addComponent(numb8Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGap(10, 10, 10)))
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                                     .addComponent(numb9Btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))))
+                                                    .addComponent(koren2Btn, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))))
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -165,7 +182,7 @@ public class CalculatorForm extends javax.swing.JFrame {
                                                     .addComponent(substrBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(10, 10, 10)
-                                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                                .addComponent(delenieBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
@@ -194,10 +211,10 @@ public class CalculatorForm extends javax.swing.JFrame {
                     .addComponent(stepBack, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
+                    .addComponent(delenNaXBtn)
+                    .addComponent(stepen2Btn)
+                    .addComponent(koren2Btn)
+                    .addComponent(delenieBtn))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(numb7Btn)
@@ -228,13 +245,17 @@ public class CalculatorForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void koren2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koren2BtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_koren2BtnActionPerformed
 
     private void enterResultTxtFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterResultTxtFldActionPerformed
-        
+       
     }//GEN-LAST:event_enterResultTxtFldActionPerformed
+
+    private void numb7BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb7BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(seven));
+    }//GEN-LAST:event_numb7BtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -262,11 +283,13 @@ public class CalculatorForm extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CalculatorForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+       
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CalculatorForm().setVisible(true);
+                
             }
         });
     }
@@ -275,12 +298,11 @@ public class CalculatorForm extends javax.swing.JFrame {
     private javax.swing.JButton addBtn;
     private javax.swing.JButton clear;
     private javax.swing.JButton clearAll;
+    private javax.swing.JButton delenNaXBtn;
+    private javax.swing.JButton delenieBtn;
     private javax.swing.JTextField enterResultTxtFld;
     private javax.swing.JButton equalBtn;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton koren2Btn;
     private javax.swing.JButton multBt;
     private javax.swing.JButton numb0Btn;
     private javax.swing.JButton numb1Btn;
@@ -296,6 +318,7 @@ public class CalculatorForm extends javax.swing.JFrame {
     private javax.swing.JButton poinBtn;
     private javax.swing.JButton procentBt;
     private javax.swing.JButton stepBack;
+    private javax.swing.JButton stepen2Btn;
     private javax.swing.JButton substrBtn;
     // End of variables declaration//GEN-END:variables
 }

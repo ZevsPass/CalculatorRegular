@@ -33,7 +33,7 @@
                           <Component id="numb1Btn" max="32767" attributes="0"/>
                           <Component id="procentBt" max="32767" attributes="0"/>
                           <Component id="numb4Btn" max="32767" attributes="0"/>
-                          <Component id="jButton5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="delenNaXBtn" alignment="0" max="32767" attributes="0"/>
                           <Component id="numb7Btn" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -57,7 +57,7 @@
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
-                                                      <Component id="jButton6" max="32767" attributes="0"/>
+                                                      <Component id="stepen2Btn" max="32767" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
@@ -67,7 +67,7 @@
                                               </Group>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="numb9Btn" max="32767" attributes="0"/>
-                                                  <Component id="jButton7" pref="89" max="32767" attributes="0"/>
+                                                  <Component id="koren2Btn" pref="89" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -81,7 +81,7 @@
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jButton8" max="32767" attributes="0"/>
+                                              <Component id="delenieBtn" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -123,10 +123,10 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="delenNaXBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="stepen2Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="koren2Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="delenieBtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -187,25 +187,25 @@
         <Property name="text" type="java.lang.String" value="&lt;=x="/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="delenNaXBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="1/x"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="stepen2Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="x2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="koren2Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="koren2"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="koren2BtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="delenieBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
@@ -214,6 +214,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb7BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb8Btn">
       <Properties>
