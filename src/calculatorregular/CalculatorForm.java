@@ -3,7 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
 package calculatorregular;
+
+import java.awt.List;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -102,24 +108,69 @@ public class CalculatorForm extends javax.swing.JFrame {
         });
 
         numb8Btn.setText("8");
+        numb8Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb8BtnActionPerformed(evt);
+            }
+        });
 
         numb9Btn.setText("9");
+        numb9Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb9BtnActionPerformed(evt);
+            }
+        });
 
         multBt.setText("x");
+        multBt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multBtActionPerformed(evt);
+            }
+        });
 
         numb4Btn.setText("4");
+        numb4Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb4BtnActionPerformed(evt);
+            }
+        });
 
         numb5Btn.setText("5");
+        numb5Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb5BtnActionPerformed(evt);
+            }
+        });
 
         numb6Btn.setText("6");
+        numb6Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb6BtnActionPerformed(evt);
+            }
+        });
 
         substrBtn.setText("-");
 
         numb1Btn.setText("1");
+        numb1Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb1BtnActionPerformed(evt);
+            }
+        });
 
         numb2Btn.setText("2");
+        numb2Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb2BtnActionPerformed(evt);
+            }
+        });
 
         numb3Btn.setText("3");
+        numb3Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numb3BtnActionPerformed(evt);
+            }
+        });
 
         addBtn.setText("+");
 
@@ -222,11 +273,12 @@ public class CalculatorForm extends javax.swing.JFrame {
                     .addComponent(numb9Btn)
                     .addComponent(multBt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(numb4Btn)
-                    .addComponent(numb5Btn)
-                    .addComponent(numb6Btn)
-                    .addComponent(substrBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(substrBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(numb4Btn)
+                        .addComponent(numb5Btn)
+                        .addComponent(numb6Btn)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(numb1Btn)
@@ -256,6 +308,47 @@ public class CalculatorForm extends javax.swing.JFrame {
     private void numb7BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb7BtnActionPerformed
         enterResultTxtFld.setText(String.valueOf(seven));
     }//GEN-LAST:event_numb7BtnActionPerformed
+
+    private void numb8BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb8BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(eight));
+    }//GEN-LAST:event_numb8BtnActionPerformed
+
+    private void numb9BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb9BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(nine));
+    }//GEN-LAST:event_numb9BtnActionPerformed
+
+    private void numb4BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb4BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(four));
+    }//GEN-LAST:event_numb4BtnActionPerformed
+
+    private void numb5BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb5BtnActionPerformed
+       enterResultTxtFld.setText(String.valueOf(five));
+    }//GEN-LAST:event_numb5BtnActionPerformed
+
+    private void numb6BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb6BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(six));
+    }//GEN-LAST:event_numb6BtnActionPerformed
+
+    private void numb1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb1BtnActionPerformed
+        enterResultTxtFld.setText(String.valueOf(one));
+    }//GEN-LAST:event_numb1BtnActionPerformed
+
+    private void numb2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb2BtnActionPerformed
+       enterResultTxtFld.setText(String.valueOf(two));
+    }//GEN-LAST:event_numb2BtnActionPerformed
+
+    private void numb3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numb3BtnActionPerformed
+      //  String temp=null;
+       // String.valueOf(temp)="temp+three";
+    //   List<String> strings = new ArrayList<String>();
+       
+       // enterResultTxtFld.setText(String.valueOf(strings));
+       
+    }//GEN-LAST:event_numb3BtnActionPerformed
+
+    private void multBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multBtActionPerformed
+        
+    }//GEN-LAST:event_multBtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,6 +382,7 @@ public class CalculatorForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CalculatorForm().setVisible(true);
+                CalculatorForm JForm = new CalculatorForm();
                 
             }
         });

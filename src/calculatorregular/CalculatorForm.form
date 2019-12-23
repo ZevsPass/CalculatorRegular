@@ -136,11 +136,13 @@
                   <Component id="multBt" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="numb4Btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="numb5Btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="numb6Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="substrBtn" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="numb4Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="numb5Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="numb6Btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -222,31 +224,49 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb8BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb9Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb9BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="multBt">
       <Properties>
         <Property name="text" type="java.lang.String" value="x"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="multBtActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb4Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb4BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb5Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb5BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb6Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb6BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="substrBtn">
       <Properties>
@@ -257,16 +277,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb1BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb2Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb2BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="numb3Btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="numb3BtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="addBtn">
       <Properties>
